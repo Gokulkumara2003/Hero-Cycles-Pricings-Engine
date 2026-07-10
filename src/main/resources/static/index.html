@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hero Cycles Pricing Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <header class="hero">
+
+        <h1>🚲 Hero Cycles Pricing Engine</h1>
+
+        <p>Manage Components • Configure Cycles • Calculate Prices Instantly</p>
+
+    </header>
+
+    <div class="container">
+
+        <!-- Dashboard -->
+
+        <div class="dashboard">
+
+            <div class="card">
+
+                <h3>Total Components</h3>
+
+                <h1 id="componentCount">0</h1>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Cycles</h3>
+
+                <h1 id="cycleCount">0</h1>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Price</h3>
+
+                <h1 id="dashboardPrice">₹0</h1>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Search -->
+
+        <h2>Search Component</h2>
+
+        <input
+            type="text"
+            id="searchComponent"
+            placeholder="Search Component">
+
+        <hr>
+
+        <!-- Component Management -->
+
+        <h2>Component Management</h2>
+
+        <form id="componentForm">
+
+            <input type="hidden" id="componentId">
+
+            <label>Component Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Component Name"
+                required>
+
+            <label>Price</label>
+
+            <input
+                type="number"
+                id="price"
+                placeholder="Enter Component Price"
+                required>
+
+            <button
+                type="submit"
+                id="saveButton">
+
+                Save Component
+
+            </button>
+
+            <button
+                type="button"
+                id="cancelButton">
+
+                Cancel
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <table id="componentTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Price</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+        <hr>
+
+        <!-- Cycle Management -->
+
+        <h2>Cycle Management</h2>
+
+        <form id="cycleForm">
+
+            <input type="hidden" id="cycleEditId">
+
+            <label>Cycle Name</label>
+
+            <input
+                type="text"
+                id="cycleName"
+                placeholder="Enter Cycle Name"
+                required>
+
+            <button
+                type="submit"
+                id="cycleSaveButton">
+
+                Save Cycle
+
+            </button>
+
+            <button
+                type="button"
+                id="cycleCancelButton">
+
+                Cancel
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <table id="cycleTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Cycle Name</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+        <hr>
+
+        <!-- Assign Components -->
+
+        <h2>Assign Components To Cycle</h2>
+
+        <label>Select Cycle</label>
+
+        <select id="cycleSelect">
+
+        </select>
+
+        <label>Select Component</label>
+
+        <select id="componentSelect">
+
+        </select>
+
+        <button id="assignButton">
+
+            Assign Component
+
+        </button>
+
+        <hr>
+
+        <!-- Price Breakdown -->
+
+        <h2>Price Breakdown</h2>
+
+        <label>Cycle</label>
+
+        <select id="priceCycleSelect">
+
+        </select>
+
+        <button id="priceButton">
+
+            Calculate Price
+
+        </button>
+
+        <div id="priceResult">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
