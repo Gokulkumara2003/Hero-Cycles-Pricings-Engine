@@ -1,0 +1,38 @@
+Problem Statement:
+Hero Cycles is one of the largest bicycle manufacturers in India. You are a fresher engineer joining their small digital team. On Day 1 your manager gives you this brief:
+
+“We sell thousands of cycle configurations — different frames, different gear sets, different tyre types. Our sales team is constantly going back and forth on pricing because part costs change every few months — a tyre priced at 200 in January may be 230 by December. Right now everything is done on Excel sheets. We need a proper pricing engine — something salesperson(s) can use to manage cycle configurations & parts, and instantly get the total price, broken down by component. Can you build this?”
+
+Questions araised while solving:
+
+1.What are the components that make up a cycle configuration?
+
+2.Can a cycle have multiple variants?
+
+3.How should the selling price be calculated?
+
+4.What are the REST APIs required?
+
+5.What should my frontend include?
+
+6.Design of frontend?
+
+7.Different types of frames?
+
+8.Different types of cycles?
+
+9.Different types of gear sets?
+
+
+Assumptions made:
+
+1.Every cycle configuration has unique name.
+
+2.Component cost is always positive.
+
+3.Selling price is calculated by Type of cycle and component used in cycle.
+
+
+
+
+ 

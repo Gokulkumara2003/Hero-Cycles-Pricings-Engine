@@ -1,0 +1,56 @@
+START
+
+
+    Display Home Page
+
+    IF user selects " Configurations"
+        collect all configurations from database
+        Calculate total price for each configuration
+        Display configurations
+    END IF
+
+    IF user selects "Add Configuration"
+        Read configuration details
+        read input
+        IF valid
+            Save configuration to database
+            Display success message
+        ELSE
+            Display validation error
+        END IF
+    END IF
+
+    IF user selects "Update Configuration"
+        Read configuration 
+        Check if configuration exists
+        IF exists
+            Update details
+            Save changes
+            Display success message
+        ELSE
+            Display "Configuration not found"
+        END IF
+    END IF
+
+    IF user selects "Delete Configuration"
+        Read configuration 
+        Check if configuration exists
+        IF exists
+            Delete configuration
+            Display success message
+        ELSE
+            Display "Configuration not found"
+        END IF
+    END IF
+
+    IF user updates a component cost
+        Find all configurations using that component
+        Recalculate total price
+        Save updated values
+    END IF
+
+END WHILE
+
+Close database connection
+
+END 
